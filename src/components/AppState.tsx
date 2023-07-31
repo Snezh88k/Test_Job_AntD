@@ -31,12 +31,12 @@ export default function AppState() {
   ]);
 
   const deletePerson = useCallback(
-    (personIndex: number) => {
-      setData((data: DataType) => {
-        return [...data.slice(0, personIndex), ...data.slice(personIndex + 1)];
-      });
+    (person: Person) => {
+      const personIndex = data.findIndex((item) => item.key === person.key);
+
+      setData([...data.slice(0, personIndex), ...data.slice(personIndex + 1)]);
     },
-    [setData]
+    [data]
   );
 
   const setPerson = useCallback(

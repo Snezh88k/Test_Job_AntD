@@ -12,7 +12,7 @@ import ModalWindow from "../modalWindow/ModalWindow";
 
 interface AppTableProps {
   data: DataType;
-  deletePerson: (personIndex: number) => void;
+  deletePerson: (person: Person) => void;
   setPerson: (person: Person) => void;
   addPerson: (person: PersonWithoutKey) => void;
 }
@@ -172,7 +172,7 @@ const AppTable = ({
       render: (_, record, index) => (
         <Space size="middle">
           <button
-            onClick={() => deletePerson(index)}
+            onClick={() => deletePerson(record)}
             className={styles.delete_btn}
           >
             Delete
