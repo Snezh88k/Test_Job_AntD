@@ -1,0 +1,25 @@
+.delete_btn {
+  &:hover {
+    color: rgba(0, 0, 0, 0.493);
+  }
+}
+
+.addPerson_button {
+  width: 100%;
+  display: flex;
+  height: 42px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.9);
+
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+
+  margin-bottom: 30px;
+}

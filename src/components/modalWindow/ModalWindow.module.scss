@@ -1,0 +1,35 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+
+  .from_wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+
+    input {
+      border: 2px solid rgb(37, 211, 255);
+      border-radius: 4px;
+      height: 25px;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &[type="submit"] {
+        background-color: rgb(25, 190, 255);
+        cursor: pointer;
+      }
+    }
+  }
+}
