@@ -163,7 +163,7 @@ const AppTable = ({
       dataIndex: "numberValue",
       key: "numberValue",
       ...getColumnSearchProps("numberValue"),
-      sorter: (a, b) => a.numberValue - b.numberValue,
+      sorter: (a, b) => (a.numberValue > b.numberValue ? -1 : 1),
       sortDirections: ["descend", "ascend"],
     },
     {
